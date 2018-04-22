@@ -1,9 +1,11 @@
-//Animate scroll up.
-//Idiot proofing
 
-setTimeout(function () {
-	console.log(window.scrollY);
-	if (window.scrollY > 0) {
-		document.getElementById("logo").classList.add("paused");
-	};
-}, 3500);
+
+var my_time;
+$(document).ready(function() {
+	 setTimeout(pageScroll,3500);  //timeout in ms
+});
+
+function pageScroll() {
+    window.scrollBy(0,400); //px it moves by
+}
+
